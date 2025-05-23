@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/style/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="/assets/Logo.jpg" rel="Website Icon">
+  <title>Login</title>
+</head>
+<body>
+  <div class="beforecon">
+    <div class="container">
+      <form action="submit"></form>
+      <h1>Login</h1>
+      <div id="succMessage"></div>
+      <div class="errorMessage" id="errorMessage"></div>
+      <div class="input">
+        <input type="email" placeholder="Email" id="email" required>
+        <i class='bx bx-envelope'></i>
+      </div>
+      <div class="input">
+        <input type="password" placeholder="Password" id="pass" required>
+        <i class='bx bxs-lock'></i>
+        <i class='bx bxs-hide toggle-password' id="tpassword"></i>
+        <!--<i class='tpassword bxs-show'></i>-->
+      </div>
+      <div class="rememberme">
+        <label><input type="checkbox"></type>Remember Me</label>
+      <a href="/user/login/forgot-password">Forgot Password</a>
+    </div>
+
+    <button type="submit" class="btn" id="btn">Login</button>
+
+    <div class="register-link">
+      <p>
+        Don't have an account yet ? <a href="/user/create">Register</a>
+      </p>
+    </div>
+  </div>
+  <div class="footerd">
+    <footer>
+      <p class="copyright">
+        &copy; 2024 EluminusCo All rights served
+      </p>
+    </footer>
+  </div>
+</div>
+<script type="module" src="/login.js" defer></script>
+</body>
+
+</html>

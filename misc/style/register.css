@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'poppins', Sans-Serif;
+  display: flex;
+  min-height: 100vh;
+  background: #0b0b0b;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 90%;
+  background: transparent;
+  border-radius: 10px;
+  color: white;
+  padding: 30px 40px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+}
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.container .input {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 30px 0;
+}
+.input input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 40px 20px 20px;
+}
+.input input::placeholder {
+  color: white;
+}
+.input i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.container .btn {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.container .btn:hover {
+  transform: scale(0.9);
+}
+
+.container .login-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.login-link p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.login-link p a:hover {
+  text-decoration: underline;
+}
+.container .tos {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  font-size: 14.5px;
+  margin: -15px 0px 15px;
+  line-height: 0;
+}
+
+.tos label input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 4.5px;
+}
+.tos label input[type="checkbox"]:checked {
+  background-color: white; /* Change background color */
+}
+
+.tos label input[type="checkbox"]:checked::before {
+  content: "✔"; /* Custom checkmark */
+  font-size: 12px;
+  position: absolute;
+  padding: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tos a {
+  color: white;
+  text-decoration: none;
+}
+.tos a:hover {
+  text-decoration: underline;
+}
+#errorMessage {
+  width: calc(100% + 60px);
+  max-width: 90%;
+  max-height: 200px;
+  overflow: visible;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  justify-self: center;
+  border: solid 2.5px #710000;
+  background-color: red;
+  margin-top: 10px;
+  display: none;
+  color: white;
+  align-content: center;
+  /*width: 100%;*/
+  border-radius: 15px;
+  height: auto;
+  font-weight: 800;
+  text-align: center;
+}
+#errorMessage p {
+  padding: 20px;
+}
+#succMessage p {
+  padding: 20px;
+}
+#errorMessage .errorp {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.erroris {
+  display: flex;
+  height: 50px;
+  margin-bottom: 63px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: white;
+}
+.errori {
+  margin-bottom: 5px;
+}
+.grid1 {
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
+  /*flex-direction: column;*/
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /*background-color: #141414;*/
+}
+footer {
+  padding: 20px;
+  margin-top: 35px;
+  color: #C2C2C2;
+  display: block;
+  flex: 1;
+  justify-content: center;
+  /*color: black;*/
+  font-weight: 550;
+}
+#succMessage {
+  width: calc(100% + 60px);
+  justify-self: center;
+  border: solid 2.5px #008614;
+  background-color: #00f725;
+  margin-top: 10px;
+  display: none;
+  color: white;
+  align-content: center;
+  /*width: 100%;*/
+  border-radius: 15px;
+  height: 50px;
+  font-weight: 800;
+  text-align: center;
+}
+#succMessage .errorp {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.succis {
+  display: inline-flex;
+  height: 50px;
+  margin-bottom: 63px;
+  padding: 0;
+  align-items: center;
+  font-size: 3em;
+  color: white;
+}
+.succi {
+  margin-bottom: 5px;
+}
+.input #tpassword1 {
+  padding-right: 25px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.input #tpassword2 {
+  padding-right: 25px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
