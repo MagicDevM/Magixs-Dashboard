@@ -90,7 +90,7 @@
     "countUsers": "node exec/scripts/countUsers.js"
   },
   "keywords": [],
-  "author": "Aaron Fernandes",
-  "license": "ISC",
-  "description": "This is an interactive dashbiard with all the needs of a hostong service with this dashboard you can do anything from just creating an account to creating an server and much much more."
+  "author": "MagicDevM",
+  "license": "MIT",
+  "description": "This is Magixs Dashboard, a dashboard designed for hosting services to host their server on, we have our theme to be modern and easy to use and provide Better experiencing for staff for managing users/servers and to be as smooth as possible, A dashboard made from node."
 }
