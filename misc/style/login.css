@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.beforecon {
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
+  /*flex-direction: column;*/
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /*background-color: #141414;*/
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /*background-color: #01002b;*/
+  font-family: 'poppins', Sans-Serif;
+  background: #0b0b0b;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  width: 90%;
+  /*background: transparent;*/
+  border-radius: 10px;
+  color: white;
+  padding: 30px 40px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+}
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.container .input {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 30px 0;
+}
+.input input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 40px 20px 20px;
+}
+.input input::placeholder {
+  color: white;
+}
+.input i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.input #tpassword {
+  padding-right: 25px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.container .rememberme {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0px 15px;
+  vertical-align: middle;
+  line-height: 0;
+}
+.rememberme label input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 4.5px;
+  transition: all 0.3s;
+}
+
+.rememberme label input[type="checkbox"]:checked {
+  background-color: white; /* Change background color */
+}
+
+.rememberme label input[type="checkbox"]:checked::before {
+  opacity: 1;
+  content: "✔"; /* Custom checkmark */
+  font-size: 12px;
+  position: absolute;
+  padding: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rememberme a {
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-bottom: 0;
+  display: flex;
+  align-self: center;
+}
+.rememberme a:hover {
+  text-decoration: underline;
+}
+.container .btn {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.container .btn:hover {
+  transform: scale(0.9);
+}
+
+.container .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.register-link p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+#errorMessage {
+  margin-top: 10px;
+  color: red;
+  font-weight: 800;
+  text-align: center;
+}
+footer .copyright {
+  margin-top: 35px;
+  display: flex;
+  color: #C2C2C2;
+  justify-content: center;
+  /*color: black;*/
+  font-weight: 550;
+} 
+#succMessage {
+  margin-top: 10px;
+  color: green;
+  font-weight: 200;
+  text-align: center;
+}

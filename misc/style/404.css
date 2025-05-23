@@ -1,0 +1,26 @@
+body, html {
+  background-color: #0b0b0b;
+  font-family: 'Poppins', Sans-Serif;
+}
+
+.404e {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1404 {
+  margin-bottom: 0;
+  font-size: 10em;
+  color: white;
+  text-align: center;
+}
+
+.errortext {
+  margin-top: 0;
+  font-family: Monospace, Sans-Serif;
+  color: white;
+  text-align: center;
+  font-size: 1.7em;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/style/register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="/assets/Logo.jpg" rel="Website Icon">
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="grid1">
+  <div class="container">
+    <form action="submit" id="registerForm"></form>
+    <h1>Register</h1>
+    <div id="succMessage"><span class="succis"><i class='bx bx-check succi'></i></span><p id="succMessageP" class="errorp"></p></div>
+    <div id="errorMessage"><span class="erroris"><i class='bx bx-x errori'></i></span><p id="errorMessageP" class="errorp"></p></div>
+    <div class="input">
+      <input type="text" placeholder="Username" class="usern" id="usern">
+      <i class='bx bxs-user'></i>
+    </div>
+    <div class="input">
+      <input type="email" placeholder="Email" id="email">
+      <i class='bx bx-envelope'></i>
+    </div>
+    <div class="input">
+      <input type="password" placeholder="Password" id="pass">
+      <i class='bx bxs-lock'></i>
+      <i class='bx bxs-hide toggle-password' id="tpassword1"></i>
+    </div>
+    <div class="input">
+      <input type="password" placeholder="Confirm Password" id="cpass">
+      <i class='bx bxs-check-shield'></i>
+      <i class='bx bxs-hide toggle-password' id="tpassword2"></i>
+    </div>
+    <div class="tos">
+      <label><input type="checkbox" id="toss" class="toss"></type>Agree to our <a href="tos.html"></a>Terms of service</label>
+  </div>
+  <button type="submit" class="btn" id="btn-1">Register</button>
+  <div class="login-link">
+    <p>
+      Already have an account ? <a href="/user/login">login</a>
+    </p>
+  </div>
+</div>
+<div class="footerd">
+  <footer class="fcopyr">
+    <p class="copyright">
+      &copy; 2024 EluminusCo All rights served
+    </p>
+  </footer>
+</div>
+</div>
+<script type="module" src="/register.js" defer></script>
+</body>
+</html>
